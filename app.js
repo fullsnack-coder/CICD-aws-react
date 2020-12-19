@@ -1,35 +1,39 @@
-const express = require("express")
-const cors = require("cors")
-const path = require("path")
-const mongoSanitize = require("express-mongo-sanitize")
+const express = require("express");
+const cors = require("cors");
+const path = require("path");
+const mongoSanitize = require("express-mongo-sanitize");
 
 // start app
-const app = express()
+const app = express();
 
 // Express port
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000;
 // const db = process.env.DATABASE
 
 // CORS
-app.use(cors())
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'client', 'build')))
+app.use(express.static(path.join(__dirname, "client", "build")));
 
 // Sanitize against NoSQL query injections
-app.use(mongoSanitize())
+app.use(mongoSanitize());
 
 // Setting up a route for our API
-app.get('/api/', (req, res) => {
-    return res.status(200).json({
-        status: "success"
-    })
-})
+app.get("/api/", (req, res) => {
+  return res.status(200).json({
+    status: "success",
+  });
+});
 
 // Redirect back to index.html if urls do not match
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client/build", "index.html"))
-})
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
 
 // Database
 // mongoose
@@ -49,6 +53,5 @@ app.get("*", (req, res) => {
 //     })
 
 app.listen(port, () => {
-    console.log(`Listening on port ${port}`)
-})
-
+  console.log(`Listening on port ${port}`);
+});
