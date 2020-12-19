@@ -2,6 +2,8 @@
 
 # MERN App
 ![AWS SSM Send-Command Example](https://github.com/fullsnack-coder/CICD-aws-react/workflows/AWS%20SSM%20Send-Command%20Example/badge.svg)
+
+
 This repository contains a simple MERN app as part of the **Deploying a Production ready React-Express App on EC2 with CI/CD** gist tutorial which you can find [here](https://gist.github.com/rmiyazaki6499/b564b40e306707c8ff6ca9c67d38fb6f)
 
 ## Table of Contents
