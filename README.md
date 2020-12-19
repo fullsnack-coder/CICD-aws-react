@@ -1,7 +1,7 @@
 ![MERN Logo](https://www.3ritechnologies.com/wp-content/uploads/2019/11/MERN-Stack-Training-in-Pune-e1575022427244.png)
 
 # MERN App
-
+![AWS SSM Send-Command Example](https://github.com/fullsnack-coder/CICD-aws-react/workflows/AWS%20SSM%20Send-Command%20Example/badge.svg)
 This repository contains a simple MERN app as part of the **Deploying a Production ready React-Express App on EC2 with CI/CD** gist tutorial which you can find [here](https://gist.github.com/rmiyazaki6499/b564b40e306707c8ff6ca9c67d38fb6f)
 
 ## Table of Contents
@@ -167,3 +167,4 @@ React then will create a `build` directory with a production build of your app w
 Created by:
 
 - [Ryuichi Miyazaki](https://github.com/rmiyazaki6499)
+- All credits for the creator Ryuichi 🧡
